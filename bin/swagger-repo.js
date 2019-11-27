@@ -150,6 +150,7 @@ program
   .command('serve')
   .description('Serves a OpenAPI and some tools via the built-in HTTP server')
   .option('-p, --port <port>', 'The server port number')
+  .option('-l, --live-reload-port <port>', 'The server port number for the live reload server')
   .option('-b, --basedir <relpath>', 'The output file')
   .option('--validate', 'Validate definition on each change')
   .action(function(options) {
